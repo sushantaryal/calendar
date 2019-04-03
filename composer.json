@@ -1,0 +1,30 @@
+{
+    "name": "taggers/century",
+    "description": "Century package for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sushant Aryal",
+            "email": "sushant.aryal90@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Taggers\\Century\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Taggers\\Century\\CenturyServiceProvider"
+            ],
+            "aliases": {
+                "Century": "Taggers\\Century\\Facades\\Century"
+            }
+        }
+    }
+}
