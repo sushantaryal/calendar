@@ -10,21 +10,29 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.1.3"
+        "php": "^7.1.3",
+        "illuminate/database": "~5.7.0|~5.8.0|~5.9.0",
+        "illuminate/support": "~5.7.0|~5.8.0|~5.9.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.0"
     },
     "autoload": {
         "psr-4": {
             "Taggers\\Century\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Taggers\\Century\\Tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "Taggers\\Century\\CenturyServiceProvider"
-            ],
-            "aliases": {
-                "Century": "Taggers\\Century\\Facades\\Century"
-            }
+            ]
         }
     }
 }

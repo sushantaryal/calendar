@@ -1,6 +1,6 @@
 # Century package for laravel
 
-> Install this package at your own risk. This package displays 100
+> Install this package at your own risk. Laravel and Vue.js Fullcalendar
 
 ## Installation
 
@@ -17,8 +17,23 @@ The service provider will automatically registered. Or you may manually add the 
 ]
 ```
 
+Run this command to publish resources
+```bash
+php artisan vendor:publish --provider="Taggers\Century\CenturyServiceProvider"
+```
+
 ## Usage
 
-```php
-Century::display();
+The head section must have
+
+```html
+<meta name="csrf-token" content="{{ csrf_token() }}">
+```
+
+and the `century` component must be inside a div with an id `app`
+
+```html
+<div id="app">
+    <century></century>
+</div>
 ```
