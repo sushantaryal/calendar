@@ -8,7 +8,7 @@
 composer require taggers/century
 ```
 
-The service provider will automatically registered. Or you may manually add the service provider in your `config/app.php` file:
+The service provider will register automatically. Or you may manually add the service provider in your `config/app.php` file:
 
 ```php
 'providers' => [
@@ -28,6 +28,11 @@ The head section must have
 
 ```html
 <meta name="csrf-token" content="{{ csrf_token() }}">
+```
+and
+
+```html
+<script src="{{ asset('vendor/century/century.js') }}"></script>
 ```
 
 and the `century` component must be inside a div with an id `app`
