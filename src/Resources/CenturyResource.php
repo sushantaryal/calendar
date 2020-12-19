@@ -2,6 +2,7 @@
 
 namespace Taggers\Century\Resources;
 
+use Illuminate\Support\Arr;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class CenturyResource extends JsonResource
@@ -28,7 +29,7 @@ class CenturyResource extends JsonResource
     {
         $opts = [];
         foreach ($options as $key => $value) {
-            $opts = array_add($opts, $key, $value);
+            $opts = Arr::add($opts, $key, $value);
         }
         return $opts;
     }
