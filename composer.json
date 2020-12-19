@@ -1,6 +1,6 @@
 {
-    "name": "taggers/century",
-    "description": "Century package for laravel",
+    "name": "taggers/calendar",
+    "description": "Calendar package for laravel",
     "license": "MIT",
     "authors": [
         {
