@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-composer require taggers/century
+composer require taggers/calendar
 ```
 
 The service provider will register automatically. Or you may manually add the service provider in your `config/app.php` file:
